@@ -7,13 +7,16 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <style>
-        body { font-family: Arial, sans-serif; background-color: #000; color: #fff; margin: 0; padding: 0; }
-        .carousel-container { max-width: 800px; margin: auto; background-color: #1a1a1a; border-radius: 10px; padding: 20px; box-sizing: border-box; }
-        .swiper-slide { text-align: center; padding: 20px; box-sizing: border-box; }
-        .quote { font-size: 1.5em; font-weight: bold; color: #f2632a; line-height: 1.4; }
-        .author { font-size: 1em; font-style: italic; color: #ccc; margin-top: 10px; }
+        body { font-family: Arial, sans-serif; background-color: transparent; color: #fff; margin: 0; padding: 0; }
+        .carousel-container { max-width: 800px; margin: auto; background-color: transparent; padding: 0; box-sizing: border-box; }
+        .swiper-slide { text-align: center; padding: 10px 20px; box-sizing: border-box; background-color: transparent; }
+        .quote { font-size: 1.4em; font-weight: bold; color: #f2632a; line-height: 1.5; }
+        .author { font-size: 1em; font-style: italic; color: #333; margin-top: 10px; }
         .author a { color: #f2632a; text-decoration: none; }
         .author a:hover { text-decoration: underline; }
+
+        /* Hide pagination dots and navigation arrows */
+        .swiper-pagination, .swiper-button-next, .swiper-button-prev { display: none !important; }
     </style>
 </head>
 <body>
@@ -41,9 +44,6 @@
                     <div class="author">— News Desk, <a href="https://kingnewswire.com/pyrrhic-press-launches-new-digital-tools-and-leadership-frameworks-to-advance-open-access-publishing-24111620054/" target="_blank">King Newswire (November 16, 2024)</a></div>
                 </div>
             </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
         </div>
     </div>
 
@@ -52,17 +52,11 @@
         const swiper = new Swiper('.swiper', {
             loop: true,
             autoplay: {
-                delay: 5000,
+                delay: 7000, // 7 seconds
                 disableOnInteraction: false,
             },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
+            effect: 'fade', // Optional for smooth fading effect instead of sliding
+            fadeEffect: { crossFade: true },
         });
     </script>
 </body>
