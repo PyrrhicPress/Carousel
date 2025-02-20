@@ -7,16 +7,24 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <style>
-        body { font-family: Arial, sans-serif; background-color: transparent; color: #fff; margin: 0; padding: 0; }
-        .carousel-container { max-width: 800px; margin: auto; background-color: transparent; padding: 0; box-sizing: border-box; }
-        .swiper-slide { text-align: center; padding: 10px 20px; box-sizing: border-box; background-color: transparent; }
-        .quote { font-size: 1.4em; font-weight: bold; color: #f2632a; line-height: 1.5; }
+        body { font-family: Arial, sans-serif; background-color: transparent; margin: 0; padding: 0; }
+        .carousel-container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #f8f8f8;
+            padding: 25px 20px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .swiper-slide { text-align: center; padding: 10px 15px; box-sizing: border-box; }
+        .quote { font-size: 1.4em; font-weight: bold; color: #000; line-height: 1.5; }
         .author { font-size: 1em; font-style: italic; color: #333; margin-top: 10px; }
         .author a { color: #f2632a; text-decoration: none; }
         .author a:hover { text-decoration: underline; }
 
-        /* Hide pagination dots and navigation arrows */
-        .swiper-pagination, .swiper-button-next, .swiper-button-prev { display: none !important; }
+        /* Hides arrows and pagination dots */
+        .swiper-button-next, .swiper-button-prev, .swiper-pagination { display: none !important; }
     </style>
 </head>
 <body>
@@ -55,7 +63,7 @@
                 delay: 7000, // 7 seconds
                 disableOnInteraction: false,
             },
-            effect: 'fade', // Optional for smooth fading effect instead of sliding
+            effect: 'fade',
             fadeEffect: { crossFade: true },
         });
     </script>
