@@ -3,74 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pyrrhic Press Carousel Testimonials</title>
+    <title>Pyrrhic Press Testimonials Carousel</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <style>
         body { font-family: Arial, sans-serif; background-color: #000; color: #fff; margin: 0; padding: 0; }
         .carousel-container { max-width: 800px; margin: auto; background-color: #1a1a1a; border-radius: 10px; padding: 20px; box-sizing: border-box; }
-        .carousel-slide { display: none; text-align: center; padding: 10px 0; }
-        .carousel-slide.active { display: block; }
-        .quote { font-size: 1.3em; font-weight: bold; color: #f2632a; }
+        .swiper-slide { text-align: center; padding: 20px; box-sizing: border-box; }
+        .quote { font-size: 1.5em; font-weight: bold; color: #f2632a; line-height: 1.4; }
         .author { font-size: 1em; font-style: italic; color: #ccc; margin-top: 10px; }
-        .navigation { text-align: center; margin-top: 15px; }
-        .dot { height: 12px; width: 12px; margin: 0 5px; background-color: #bbb; border-radius: 50%; display: inline-block; cursor: pointer; }
-        .dot.active { background-color: #f2632a; }
         .author a { color: #f2632a; text-decoration: none; }
         .author a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
     <div class="carousel-container">
-        <div class="carousel-slide active">
-            <div class="quote">"Pyrrhic Press Publishing is redefining the publishing industry with its commitment to open access, environmental responsibility, and community empowerment."</div>
-            <div class="author">— Drew Wright, <a href="https://www.digitaljournal.com/pr/news/binary-news-network/pyrrhic-press-publishing-leader-open-access-1462121079.html" target="_blank">Digital Journal (January 7, 2025)</a></div>
-        </div>
-        <div class="carousel-slide">
-            <div class="quote">"Pyrrhic Press Publishing stands as a trailblazer, championing groundbreaking works that entertain, enlighten, and induce thought while promoting further understanding."</div>
-            <div class="author">— Michael Peres, <a href="https://ceoweekly.com/pyrrhic-press-publishing-the-vanguard-of-literary-innovation-and-integrity/" target="_blank">CEO Weekly (November 22, 2024)</a></div>
-        </div>
-        <div class="carousel-slide">
-            <div class="quote">"Ranked among the top publishers globally, Pyrrhic Press Publishing is a beacon for authors seeking professional support and global reach."</div>
-            <div class="author">— USA News Staff, <a href="https://usanews.com/newsroom/Pyrrhic_Press_Publishing_Breaking_Barriers_in_Open_Access_Knowledge" target="_blank">USA News (November 23, 2024)</a></div>
-        </div>
-        <div class="carousel-slide">
-            <div class="quote">"Pyrrhic Press Publishing is making waves as one of the fastest-growing independent publishers, revolutionizing the publishing industry by making high-quality knowledge accessible to everyone."</div>
-            <div class="author">— Editorial Team, <a href="https://sanfranciscopost.com/pyrrhic-press-publishing-empowering-authors-and-advancing-innovation-with-purpose/" target="_blank">San Francisco Post (November 18, 2024)</a></div>
-        </div>
-        <div class="carousel-slide">
-            <div class="quote">"Pyrrhic Press Publishing launches new digital tools and leadership frameworks to advance open-access publishing, reinforcing its position at the forefront of publishing innovation."</div>
-            <div class="author">— News Desk, <a href="https://kingnewswire.com/pyrrhic-press-launches-new-digital-tools-and-leadership-frameworks-to-advance-open-access-publishing-24111620054/" target="_blank">King Newswire (November 16, 2024)</a></div>
-        </div>
-        <div class="navigation">
-            <span class="dot active" onclick="showSlide(0)"></span>
-            <span class="dot" onclick="showSlide(1)"></span>
-            <span class="dot" onclick="showSlide(2)"></span>
-            <span class="dot" onclick="showSlide(3)"></span>
-            <span class="dot" onclick="showSlide(4)"></span>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="quote">"Pyrrhic Press Publishing is redefining the publishing industry with its commitment to open access, environmental responsibility, and community empowerment."</div>
+                    <div class="author">— Drew Wright, <a href="https://www.digitaljournal.com/pr/news/binary-news-network/pyrrhic-press-publishing-leader-open-access-1462121079.html" target="_blank">Digital Journal (January 7, 2025)</a></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="quote">"Pyrrhic Press Publishing stands as a trailblazer, championing groundbreaking works that entertain, enlighten, and induce thought while promoting further understanding."</div>
+                    <div class="author">— Michael Peres, <a href="https://ceoweekly.com/pyrrhic-press-publishing-the-vanguard-of-literary-innovation-and-integrity/" target="_blank">CEO Weekly (November 22, 2024)</a></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="quote">"Ranked among the top publishers globally, Pyrrhic Press Publishing is a beacon for authors seeking professional support and global reach."</div>
+                    <div class="author">— USA News Staff, <a href="https://usanews.com/newsroom/Pyrrhic_Press_Publishing_Breaking_Barriers_in_Open_Access_Knowledge" target="_blank">USA News (November 23, 2024)</a></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="quote">"Pyrrhic Press Publishing is making waves as one of the fastest-growing independent publishers, revolutionizing the publishing industry by making high-quality knowledge accessible to everyone."</div>
+                    <div class="author">— Editorial Team, <a href="https://sanfranciscopost.com/pyrrhic-press-publishing-empowering-authors-and-advancing-innovation-with-purpose/" target="_blank">San Francisco Post (November 18, 2024)</a></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="quote">"Pyrrhic Press Publishing launches new digital tools and leadership frameworks to advance open-access publishing, reinforcing its position at the forefront of publishing innovation."</div>
+                    <div class="author">— News Desk, <a href="https://kingnewswire.com/pyrrhic-press-launches-new-digital-tools-and-leadership-frameworks-to-advance-open-access-publishing-24111620054/" target="_blank">King Newswire (November 16, 2024)</a></div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        let currentSlide = 0;
-        function showSlide(index) {
-            const slides = document.querySelectorAll('.carousel-slide');
-            const dots = document.querySelectorAll('.dot');
-
-            slides[currentSlide].classList.remove('active');
-            dots[currentSlide].classList.remove('active');
-
-            currentSlide = index;
-
-            slides[currentSlide].classList.add('active');
-            dots[currentSlide].classList.add('active');
-        }
-
-        function autoPlay() {
-            const slides = document.querySelectorAll('.carousel-slide');
-            currentSlide = (currentSlide + 1) % slides.length;
-            showSlide(currentSlide);
-        }
-
-        setInterval(autoPlay, 5000);
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
     </script>
 </body>
 </html>
